@@ -1,0 +1,43 @@
+/********w************
+
+    Competency 4
+    Name: Tulimar Quintero
+    Date: 10 May,2023
+    Description: Competency 4 CSS for Tables
+
+*********************/
+
+body{
+	background-image: url("image.jpg"); /* The image show a car in a natural enviroment: https://unsplash.com/*/
+	font-family: 'Almendra SC';font-size: 15px;
+}
+
+table {
+	border: 2px solid black;
+	background-color: #ad9d6d;
+	color: #ddd;
+	width: 80%;
+	margin: 25px auto;
+	padding: 10px;
+	border: 4px solid black;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px #aaa;	
+}
+
+table caption {
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	color: #777;
+}
+thead {
+	font-weight: bold;
+	background-color: #959595;
+}
+
+tr:nth-child(even) {
+	background-color: purple;
+  }
+  tr:hover{
+    color:black;
+}

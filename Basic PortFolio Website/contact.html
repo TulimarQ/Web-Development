@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulimar Quintero's Portfolio - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div id = "navegation">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="header-image">
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+        <div id="contact">
+            <form id="contact_form" action="index.html" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <p class="name error" id="name_error">* Required field</p>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+                <p class="phone error" id="phone_error">* Required field</p>
+                <p class="phone error" id="phoneformat_error">* Please enter a valid 10-digit phone number.</p>
+
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email">
+                <p class="email error" id="email_error">* Required field</p>
+                <p class="email error" id="emailformat_error">* Invalid email address</p>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                <p class="comments error" id="comments_error">Required field.</p>
+
+                <div class="clear"></div>
+				<p class="center">
+					<button type="submit" id="submit">Submit</button>
+					<button type="reset" id="clear">Reset</button>
+				</p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &copy; 2023 Tulimar Quintero</p>
+    </footer>
+</body>
+</html>

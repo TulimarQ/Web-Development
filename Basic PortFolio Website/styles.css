@@ -1,0 +1,175 @@
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
+
+body {
+    margin: 0;
+    font-family: 'Carrois Gothic';
+}
+
+  p, li { 
+    line-height: 1.6;
+    color: gray;
+}
+
+#header-image {
+    background-image: url('images/header3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navegation nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navegation nav li {
+    margin-left: 20px;
+}
+
+#navegation nav a {
+    text-decoration: none;
+    color:black
+}
+
+#navegation{
+    padding: 30px;
+    font-size: 22PX;
+    font-weight: 700;
+}
+
+main {
+    padding: 15px;
+}
+
+#navegation nav ul li a:hover {
+	color: #8f8f8f;
+}
+ #navegation nav ul li a:focus {
+	color: black
+}
+
+
+
+/* Contact form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input:focus, textarea:focus {
+    background-color: lightgray;
+    color: blue;
+}
+
+.error {
+    color: red;
+    
+}
+
+.center {
+	text-align: center;
+}
+#submit,
+#clear {
+	height: 36px;
+	color: #333;
+	margin-top: 8px;
+	font-size: 16px;
+}
+
+#submit {
+	margin-right: 15px;
+}
+
+#submit:hover,
+#clear:hover {
+	cursor: pointer;
+}
+
+/* footer styles */
+
+footer {
+    font-size: 12px;
+    background-color:#f5f6fc;
+    padding: 5px;
+    text-align: center; 
+}
+
+footer nav ul li a:hover {
+	color: #8f8f8f;
+}
+ footer nav ul li a:focus {
+	color: black
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+    margin-bottom: 12px; 
+}
+
+footer nav li {
+    margin-left: 0;
+}
+
+footer nav a {
+    text-decoration: none;
+    color:black
+}
+
+
+#home, #products-services  {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#section1, 
+#section2,#section3,#section4{
+    flex-basis: 48%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+   
+}
+#section1 img {
+    max-width: 250px;
+    float: left;
+    margin-right: 10px;
+    padding-right: 15px;
+}
+
+/* Navegation */
+
+@media (max-width: 680px){
+	#home, #products-services {
+		display: block;
+	}
+    #navegation nav ul {
+		display: block;
+	}
+    h1 {
+        text-align: center;
+           }
+        } 
+
+
+

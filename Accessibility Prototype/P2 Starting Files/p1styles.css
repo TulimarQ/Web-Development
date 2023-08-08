@@ -1,0 +1,362 @@
+/********w************
+    
+    Project 2 Stylesheet
+    Name:Tulimar Quintero	
+    Date: Jun 15, 2023 
+    Description: Project 2 Accessibility
+
+*********************/
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e6e6e6;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#container {
+	width: 810px;
+	background-color: #fff;
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+	background: rgb(240,239,240);
+	background: linear-gradient(180deg, rgba(240,239,240,1) 0%, rgba(251,251,251,1) 0%, rgba(255,255,255,1) 95%, rgba(232,232,232,1) 100%, rgba(214,213,214,1) 100%, rgba(205,204,204,1) 100%, rgba(227,226,227,1) 100%, rgba(212,211,212,1) 100%, rgba(225,224,225,1) 100%);
+
+}
+
+#logo{
+	margin-bottom:-4px;
+}
+
+
+header {
+	display: flex;	
+}
+
+nav ul {
+	display:flex;
+}
+
+
+nav ul li {
+	list-style: none;
+}  
+
+nav ul li a {
+	text-decoration:none;
+	color: #006699;
+}  
+
+nav ul li a:hover {
+	background-color: #b5b5b5;;
+}
+
+nav ul li a:focus {
+	color: #b5b5b5;;
+}
+
+#secondarymenu {
+	font-size: 11px;
+	margin: auto;
+	margin-right: 25%;
+	margin-top:30px;
+}
+
+#secondarymenu ul li:not(:last-child)::after {
+	content: "|";
+	margin-left: 7px;
+  }
+
+#secondarymenu nav ul li {
+	margin-right: 7px;
+}
+
+  
+#searchform input[type='text']{
+	width: 90px;
+}
+
+#searchform input[type='button']{
+	font-size: 11px;
+}
+
+#container {
+	position: relative;
+}
+
+#searchform {
+	position: absolute;
+	right: 13px;
+	top: 30px ;
+}
+
+.headerbackground {
+	width: 100%;
+	height: 200px; 
+	background-image: url(images/headerBackground.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 30px;
+	margin: 0;
+	color: white;
+	font-weight: 200;
+	letter-spacing: 8px;
+}
+
+.text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 30px;
+	margin: 0;
+	color: white;
+	font-style: italic;
+}
+
+#mainmenu {
+	margin-top: -5px;
+	background: rgb(141,195,247);
+	background: linear-gradient(180deg, rgba(141,195,247,1) 0%, rgba(88,160,211,1) 50%, rgba(30,122,173,1) 100%); 
+	padding-left: 90px;
+    padding-right: 90px;
+}
+
+#mainmenu nav ul{
+	height: 25px;
+}
+
+#mainmenu nav ul li {
+	margin: auto;
+	list-style: none;
+	
+}
+#mainmenu nav ul li a{
+	color: white;
+	font-size: 13px;
+	font-weight: 549;
+}
+
+#mainmenu nav ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    color: #006699; 
+    text-shadow: 1px 0px #bcddff;
+}
+
+#box {
+	display: flex;
+}
+
+#mainmenu nav ul li a:hover{
+	background-color: #525885;
+}
+
+#mainmenu nav ul li a:focus{
+	color: #00094b;
+}
+
+
+aside{
+	flex: 25%;
+}
+
+.aboutUs {
+	list-style: none;
+}
+
+aside ul li {
+	background: rgb(240,239,240);
+	background: linear-gradient(172deg, rgba(240,239,240,1) 0%, rgba(240,239,240,1) 0%, rgba(237,236,237,1) 23%, rgba(205,204,204,1) 100%, rgba(227,226,227,1) 100%, rgba(214,213,214,1) 100%, rgba(212,211,212,1) 100%, rgba(225,224,225,1) 100%, rgba(209,208,209,1) 100%); 		
+	list-style-position: inside;
+	padding-left: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-weight: 550;
+}
+
+aside ul li a {
+	color: black;
+	font-size: 10px;
+	text-decoration:none;
+	color:#333354	
+}
+
+aside p {
+	margin-top: 40px;
+	color: gray;
+	font-size: 12px;
+	border-top: 1px solid #dddddd;
+	padding-top: 5px;
+}
+
+aside p img{
+	float: right;
+}
+
+aside a:hover {
+	background-color: rgb(125, 188, 210)
+}
+
+aside a:focus {
+	color: rgb(125, 188, 210)
+}
+
+section{
+	flex: 75%;
+	margin-left: 15px;
+}
+#about {
+	border-bottom: 1px solid #dddddd;
+}
+
+#about h3 {
+	margin-top: 30px;
+	margin-bottom: 6px;
+}
+		
+#content h5 {
+	margin-top: 15px;
+}
+
+section ol {
+	list-style: none;
+	margin-left: 40px;	
+}
+
+section ol li {
+	padding: 10px;
+}
+
+section ol li a {
+	text-decoration: none;
+	color: #006699;
+	font-weight: bold;	
+	font-size: 12px;
+}
+		
+#roverlogo {
+	border: #a2a2a2 solid;
+	width: 250px;	
+	float: right;
+	padding: 5px;
+
+} 
+
+#roverlogo img {
+	width: 100%;
+} 
+
+#content p p a {
+	text-decoration: none;
+	color: #006699;	
+	font-weight: 550;
+} 
+		
+#content p {
+	color: black;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+#roverlogo p {
+	color: black;
+	font-size: 11px;
+	line-height: 1.5;
+}
+
+#content p a {
+	text-decoration: none;
+	color: #006699;
+	font-weight: 550;
+}
+
+#route {
+	display: flex;
+	font-size: 8px;
+	margin-top: 5px;		
+}
+#route a {
+	text-decoration: none;
+	color: #006699;	
+}
+
+#route p a {
+	text-decoration: none;	
+	color: black;
+}
+	
+footer{
+	padding-right: 100px;
+	text-align: center; 
+	font-size: 10px;
+	margin: 0;
+	margin-top: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+footer nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%; 
+	margin: 0 auto; 
+  }
+
+footer nav ul li {
+	margin: 0px;
+	text-align: center;
+	margin-right: 7px;
+}
+
+footer nav ul li a:hover {
+	background-color: #8f8f8f;
+}
+
+footer nav ul li a:focus {
+	color: black
+}
+
+footer ul li:not(:last-child)::after {
+	content: "|";
+	margin-left: 7px;
+}
+footer p a {
+	text-decoration: none;
+	color: #006699;
+}
+
+footer p{
+	text-decoration: none;
+	color: gray;
+}
+.p1 {
+	color:black;
+}
